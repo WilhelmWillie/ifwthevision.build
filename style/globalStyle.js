@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #04080F;
-    font-family: 'Literata', serif;
+    background-color: ${p => p.theme.colors.black};
+    font-family: ${p => p.theme.font.family};
     margin: 0;
   }
 `;
