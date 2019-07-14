@@ -36,6 +36,27 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Literata:400,700&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/static/favicon.png" />
+          <meta
+            name="description"
+            content="do you fw the vision? let's build."
+          />
+          <meta
+            property="og:description"
+            content="do you fw the vision? let's build."
+          />
+          <meta
+            name="twitter:description"
+            content="do you fw the vision? let's build."
+          />
+          <meta
+            property="og:image"
+            content="http://ifwthevision.build/static/og_image.png"
+          />
+          <meta
+            name="twitter:image"
+            content="http://ifwthevision.build/static/og_image.png"
+          />
         </Head>
         <body>
           <Main />
