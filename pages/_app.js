@@ -1,22 +1,22 @@
-import React from 'react'
-import App, { Container } from 'next/app'
-import { ThemeProvider } from 'styled-components'
+import React from "react";
+import App, { Container } from "next/app";
+import { ThemeProvider } from "styled-components";
 
-import { theme, GlobalStyle } from 'style';
+import { theme, GlobalStyle } from "style";
 
 class VisionApp extends App {
   static async getInitialProps({ Component, ctx }) {
-    let pageProps = {}
+    let pageProps = {};
 
     if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
+      pageProps = await Component.getInitialProps(ctx);
     }
 
-    return { pageProps }
+    return { pageProps };
   }
 
   render() {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps } = this.props;
 
     return (
       <Container>
@@ -27,9 +27,8 @@ class VisionApp extends App {
           </React.Fragment>
         </ThemeProvider>
       </Container>
-    )
+    );
   }
 }
 
-
-export default VisionApp
+export default VisionApp;

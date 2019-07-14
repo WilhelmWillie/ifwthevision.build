@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import styled from 'styled-components';
+import Head from "next/head";
+import styled from "styled-components";
 
 export default () => (
   <Wrapper>
@@ -10,7 +10,11 @@ export default () => (
     <Container>
       <Title>i fw the vision.</Title>
       <LetsBuild>let's build.</LetsBuild>
-      <Tease>You have no idea what this is but admit it:<br/>you're curious. Do u fw the vision?</Tease>
+      <Tease>
+        You have no idea what this is but admit it:
+        <br />
+        you're curious. Do u fw the vision?
+      </Tease>
     </Container>
   </Wrapper>
 );
@@ -23,19 +27,16 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Container = styled.div`
-  width: 95%;
-  max-width: 480px;
-`;
+const Container = styled.div``;
 
 const Title = styled.h1`
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 42px;
   margin: 0;
 `;
 
 const LetsBuild = styled.h1`
-  color: #507DBC;
+  color: #507dbc;
   font-size: 48px;
   margin: 0;
 `;
