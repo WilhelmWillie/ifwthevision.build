@@ -52,6 +52,15 @@ export default class MyDocument extends Document {
             content="http://ifwthevision.build/static/og_image.png"
           />
           <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="i fw the vision" />
+          <meta
+            name="twitter:description"
+            content="do you fw the vision? let's build."
+          />
+          <meta
+            name="twitter:image"
+            content="http://ifwthevision.build/static/og_image.png"
+          />
         </Head>
         <body>
           <Main />
