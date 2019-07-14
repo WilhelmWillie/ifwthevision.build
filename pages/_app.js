@@ -1,6 +1,8 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import { createGlobalStyle } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
+
+import { theme, GlobalStyle } from 'style';
 
 class VisionApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -18,19 +20,16 @@ class VisionApp extends App {
 
     return (
       <Container>
-        <GlobalStyle />
-        <Component {...pageProps} />
+        <ThemeProvider theme={theme}>
+          <React.Fragment>
+            <GlobalStyle />
+            <Component {...pageProps} />
+          </React.Fragment>
+        </ThemeProvider>
       </Container>
     )
   }
 }
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: #04080F;
-    font-family: 'Literata', serif;
-    margin: 0;
-  }
-`;
 
 export default VisionApp
