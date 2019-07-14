@@ -1,0 +1,23 @@
+{
+  "name": "ifwthevision.build",
+  "version": "1.0.0",
+  "description": "i fw the vision. let's build.",
+  "main": "index.js",
+  "repository": "https://github.com/WilhelmWillie/ifwthevision.build",
+  "author": "WilhelmWillie",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6"
+  }
+}
