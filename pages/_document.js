@@ -43,20 +43,15 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="do you fw the vision? let's build."
-          />
-          <meta
-            name="twitter:description"
+            name="og:description"
             content="do you fw the vision? let's build."
           />
           <meta
             property="og:image"
+            name="og:image"
             content="http://ifwthevision.build/static/og_image.png"
           />
-          <meta
-            name="twitter:image"
-            content="http://ifwthevision.build/static/og_image.png"
-          />
+          <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <body>
           <Main />
