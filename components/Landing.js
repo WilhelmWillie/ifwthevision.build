@@ -7,7 +7,9 @@ export default () => (
     <Tease>
       You have no idea what this is but admit it:
       <br />
-      you're curious. Do u fw the vision?
+      you're curious.
+      <br />
+      <Impact>Do u fw the vision?</Impact>
     </Tease>
   </Container>
 );
@@ -41,4 +43,10 @@ const Tease = styled.p`
   color: ${p => p.theme.colors.white};
   font-size: 18px;
   text-transform: lowercase;
+  line-height: 28px;
+`;
+
+const Impact = styled.span`
+  color: ${p => p.theme.colors.blue};
+  font-weight: bold;
 `;
