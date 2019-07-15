@@ -1,15 +1,14 @@
 import styled from "styled-components";
+import { EmailInput } from "components";
 
 export default () => (
   <Container>
     <Title>i fw the vision.</Title>
     <LetsBuild>let's build.</LetsBuild>
     <Tease>
-      You have no idea what this is but admit it:
-      <br />
-      you're curious.
-      <br />
+      You have no idea what this is but admit it: you're curious.
       <Impact>Do u fw the vision?</Impact>
+      <EmailInput />
     </Tease>
   </Container>
 );
@@ -39,14 +38,17 @@ const LetsBuild = styled.h1`
     }`}
 `;
 
-const Tease = styled.p`
+const Tease = styled.div`
   color: ${p => p.theme.colors.white};
   font-size: 18px;
   text-transform: lowercase;
   line-height: 28px;
+  width: 100%;
 `;
 
 const Impact = styled.span`
+  display: flex;
   color: ${p => p.theme.colors.blue};
   font-weight: bold;
+  margin-top: 16px;
 `;
