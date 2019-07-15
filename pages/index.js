@@ -36,7 +36,7 @@ const Wrapper = styled.div`
 
 const Footer = styled.div`
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   left: 0;
   width: 100%;
   text-align: center;
