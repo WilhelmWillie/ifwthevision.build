@@ -1,12 +1,26 @@
+import { useRef } from "react";
 import styled from "styled-components";
 
-export default () => (
-  <InputContainer>
-    <Input type="email" placeholder="your@email.com" />
+export default () => {
+  const emailInput = useRef(null);
 
-    <Button>build</Button>
-  </InputContainer>
-);
+  const onButtonClick = () => {
+    // TODO: Log e-mail to firebase
+    const email = emailInput.current.value;
+    console.log(`[EMAIL] Add ${email} to landing page email list`);
+
+    // Clear input
+    emailInput.current.value = "";
+  };
+
+  return (
+    <InputContainer>
+      <Input type="email" placeholder="your@email.com" ref={emailInput} />
+
+      <Button onClick={onButtonClick}>build</Button>
+    </InputContainer>
+  );
+};
 
 const InputContainer = styled.div`
   display: flex;
