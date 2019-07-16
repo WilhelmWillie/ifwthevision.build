@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 
+import { emailsRef } from "config/firebase";
+
 const SUCCESS_MESSAGE = `Your e-mail has been added to our e-mail list`;
 
 export default () => {
@@ -8,10 +10,8 @@ export default () => {
   const [submittedEmail, setSubmittedEmail] = useState(false);
 
   const onButtonClick = () => {
-    // TODO: Log e-mail to firebase
     const email = emailInput.current.value;
-    console.log(`[EMAIL] Add ${email} to landing page email list`);
-
+    emailsRef.push().set(email);
     setSubmittedEmail(true);
 
     // Clear input
