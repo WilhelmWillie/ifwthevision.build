@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { emailsRef } from "config/firebase";
 
-const SUCCESS_MESSAGE = `Your e-mail has been added to our e-mail list`;
+const SUCCESS_MESSAGE = `Your e-mail has been added to our e-mail list.`;
 
 export default () => {
   const emailInput = useRef(null);
@@ -48,20 +48,24 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
+  border-radius: 0;
   border-width: 0;
   font-family: ${p => p.theme.font.family};
   font-size: 16px;
   flex-grow: 1;
   padding: 16px;
+  margin: 0;
 `;
 
 const Button = styled.button`
   background-color: ${p => p.theme.colors.blue};
+  border-radius: 0;
   border-width: 0;
   color: ${p => p.theme.colors.white};
   font-family: ${p => p.theme.font.family};
   font-size: 16px;
   padding: 16px 24px;
+  margin: 0;
 `;
 
 const SuccessMessage = styled.div``;
